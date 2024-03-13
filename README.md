@@ -8,11 +8,10 @@ The files are organized as follows:
 - 3_Augment_Data - The extra data files I used to augment the training data for kbd and swc. All the files were obtained from the Sigmorphon 2019 Shared Task 1 data directory.
   
  ## Run Commands
- Any one of these commands within the 0_Scripts directories will produce the output and log files for both tokenizers
+Navigate to the 'kbd' and 'swc' subfolders in 0_Scripts and simply run:-
 `sbatch run.sh` \
-or \
-`python tokenizer_SHP_Morfessor_Flatcat.py` and
-`python tokenizer_TAR_Wordpiece.py`
+For 'xty', further navigate to the 'neural-transducer' directory and run:-
+`sbatch run_tagtransformer.sh`
 
  ## My Approach
 ### Wordpiece Tokenization for Rarámuri (tar) ([code](https://github.com/Aadit3003/subword-miniproject-1/blob/7dd2aca9aecd7bf9b28f99a1d81c56613a8b4cd4/0_Scripts/tokenizer_TAR_Wordpiece.py))
