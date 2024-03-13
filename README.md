@@ -9,7 +9,7 @@ The files are organized as follows:
   
  ## Run Commands
 Navigate to the 'kbd' and 'swc' subfolders in 0_Scripts and simply run:-
-`sbatch [run.sh](https://github.com/Aadit3003/subword-miniproject-2/blob/7cb88b6b033c25f0eae500cacc7203df5c133068/1_Scripts/kbd/run.sh)` \
+`sbatch run.sh` \
 For 'xty', further navigate to the 'neural-transducer' directory and run:-
 `sbatch [run_tagtransformer.sh]()`
 
@@ -25,4 +25,5 @@ Since I could not find high-quality data for augmentation with Mixtec, and the n
 - architecture = [hmm, hmmfull, tagtransformer, taguniversaltransformer]
 - decode = [greedy, beam]
 - attention_heads = [4, 8]
+
 I found that the tagtransformer was giving me the best results with 10 layers, 4 attention heads and greedy decoding (80.16 on the dev set), closely followed by thr taguniversaltransformer (79.36). I had to use "PLACEHOLDER" tokens in the test case files, since there was no gold labeling, and hence could not report the test set metrics.
