@@ -19,7 +19,7 @@ For these two languages, the neural baseline proved to be weaker than the non-ne
 - [Kabardian](https://github.com/Aadit3003/subword-miniproject-2/blob/417d7239c8755cb9dfcf617c26e3bd777cc508fb/1_Scripts/kbd/kbd.out)
 - [Swahili](https://github.com/Aadit3003/subword-miniproject-2/blob/7cb88b6b033c25f0eae500cacc7203df5c133068/1_Scripts/swc/swc.out)
 
-### Mixtec ([code](https://github.com/Aadit3003/subword-miniproject-2/blob/6d43ab126a32b8106f42604d1a5ec6c48629de15/1_Scripts/xty/neural-transducer/run_tagtransformer.sh))
+### Mixtec (xty) ([code](https://github.com/Aadit3003/subword-miniproject-2/blob/6d43ab126a32b8106f42604d1a5ec6c48629de15/1_Scripts/xty/neural-transducer/run_tagtransformer.sh))
 Since I could not find high-quality data for augmentation with Mixtec, and the neural baseline was giving good results, I decided to play around with hyperparameter optimization. I did a grid search by varying the following hyperparameters:
 - layers = [4, 8, 10]
 - architecture = [hmm, hmmfull, tagtransformer, taguniversaltransformer]
