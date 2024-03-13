@@ -1,13 +1,12 @@
-# subword-miniproject-1
-Mini-Project 1 for 11824. I use two subword tokenizers using Morfessor Flatcat and Wordpiece for Shipibo-Konibo (shp) and Rarámuri (tar) respectively (to beat Morfessor and Sentencepiece baselines).
+# subword-miniproject-2
+Mini-Project 2 for 11824. I improve upon two baseline methods (neural and non-neural) for paradigm completion and reinflection for 3 languages - Kabardian (kbd), Swahili (swc), and Mixtec (xty).
  ## File Structure
 The files are organized as follows:
-- 0_Scripts:- Contains the two tokenizer files for shp and tar respectively. Also contains utilities like evaluation (score.py) and timer (Timer.py)
-- 1_Final_Submission_Files:- The predictions of these tokenizers on the test files for shp and tar.
-- 2_Log_Files:- The output logs from training the two tokenizers.
-- 3_Previous_Attempts:- A previous attempt using SentencePiece that failed to beat baseline performance.
-- 4_Given_Baselines:- The notebook provided to calculate scores.
-
+- dataset:- Contains the given train/test/dev files as well as the augmented files and preprocessed train files.
+- 1_Scripts:- Cotains the scripts used for data preparation, augmentation and training the model as well as inferencing to produce the final inflected forms.
+- 2_Final_Submission:- The predicted inflected forms for the lemmas and tags for the three languages.
+- 3_Augment_Data - The extra data files I used to augment the training data for kbd and swc. All the files were obtained from the Sigmorphon 2019 Shared Task 1 data directory.
+  
  ## Run Commands
  Any one of these commands within the 0_Scripts directories will produce the output and log files for both tokenizers
 `sbatch run.sh` \
