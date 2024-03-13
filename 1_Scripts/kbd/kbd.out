@@ -18,7 +18,7 @@ TRAINING FILE: ../../dataset/kbd.train.tsv METRIC: 0.8833333333333333
 
 TRAINING FILE: ../../dataset/kbd.train_2_simple_addition.tsv METRIC: 0.8866666666666667
 
-TRAINING FILE: ../../dataset/swc.train_3_self_pollinate.tsv METRIC: 0.06666666666666667
+TRAINING FILE: ../../dataset/kbd.train_3_self_pollinate.tsv METRIC: 0.6766666666666666
 
 TRAINING FILE: ../../dataset/kbd.train_4_cross_pollinate.tsv METRIC: 0.43666666666666665
 
