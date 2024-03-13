@@ -1,0 +1,63 @@
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: seed - 0
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: train - ['../dataset/.train.tsv']
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: dev - ['../dataset/.dev.tsv']
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: test - ['../dataset/.dev.tsv']
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: model - 'checkpoints/sig22/tagtransformer/'
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: load - ''
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: bs - 400
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: epochs - 100
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: max_steps - 0
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: warmup_steps - 100
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: total_eval - 50
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: optimizer - <Optimizer.adam: 'adam'>
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: scheduler - <Scheduler.warmupinvsqr: 'warmupinvsqr'>
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: lr - 0.001
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: min_lr - 1e-05
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: momentum - 0.9
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: beta1 - 0.9
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: beta2 - 0.98
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: estop - 1e-08
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: cooldown - 0
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: patience - 0
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: discount_factor - 0.5
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: max_norm - 1.0
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: gpuid - [0]
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: loglevel - 'info'
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: saveall - False
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: shuffle - True
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: cleanup_anyway - True
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: dataset - <Data.sigmorphon17task1: 'sigmorphon17task1'>
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: max_seq_len - 128
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: max_decode_len - 32
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: decode_beam_size - 5
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: init - ''
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: dropout - 0.3
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: embed_dim - 256
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: nb_heads - 4
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: src_layer - 10
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: trg_layer - 10
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: src_hs - 1024
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: trg_hs - 1024
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: label_smooth - 0.1
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: tie_trg_embed - False
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: arch - <Arch.tagtransformer: 'tagtransformer'>
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: nb_sample - 2
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: wid_siz - 11
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: indtag - False
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: decode - <Decode.greedy: 'greedy'>
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: mono - False
+INFO - 03/12/24 01:37:32 - 0:00:00 - command line argument: bestacc - True
+Traceback (most recent call last):
+  File "/home/aaditd/Subword/miniproject-2/neural-transducer/src/train.py", line 366, in <module>
+    main()
+  File "/home/aaditd/Subword/miniproject-2/neural-transducer/src/train.py", line 342, in main
+    trainer.load_data(params.dataset, params.train, params.dev, params.test)
+  File "/home/aaditd/Subword/miniproject-2/neural-transducer/src/train.py", line 107, in load_data
+    self.data = dataloader.SIGMORPHON2017Task1(train, dev, test, params.shuffle)
+  File "/home/aaditd/Subword/miniproject-2/neural-transducer/src/dataloader.py", line 46, in __init__
+    self.source, self.target = self.build_vocab()
+  File "/home/aaditd/Subword/miniproject-2/neural-transducer/src/dataloader.py", line 267, in build_vocab
+    for lemma, word, tags in self.read_file(self.train_file):
+  File "/home/aaditd/Subword/miniproject-2/neural-transducer/src/dataloader.py", line 283, in read_file
+    with open(file, "r", encoding="utf-8") as fp:
+FileNotFoundError: [Errno 2] No such file or directory: '../dataset/.train.tsv'
