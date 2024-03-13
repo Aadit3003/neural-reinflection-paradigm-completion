@@ -1,0 +1,27 @@
+SIMPLE ADDITION!!
+    Original Entries: 2077
+    Total Entries: 11177
+
+SELF POLLINATION!!
+    9100 New lemmas!!
+    207 New Tags!!
+    1883700 Total Augment Entries!!
+    Total Entries: 20975
+
+CROSS POLLINATION!!
+    9100 New lemmas!!
+    207 New Tags!!
+    1883700 Total Augment Entries!!
+    Total Entries: 20975
+
+TRAINING FILE: ../../dataset/swc.train.tsv METRIC: 0.7150749802683505
+
+TRAINING FILE: ../../dataset/swc.train_2_simple_addition.tsv METRIC: 0.9589581689029203
+
+TRAINING FILE: ../../dataset/swc.train_3_self_pollinate.tsv METRIC: 0.7352012628255722
+
+TRAINING FILE: ../../dataset/swc.train_4_cross_pollinate.tsv METRIC: 0.7352012628255722
+
+Test file generated!!
+
+SWAHILI DONE!!
