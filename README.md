@@ -11,7 +11,7 @@ The files are organized as follows:
 Navigate to the 'kbd' and 'swc' subfolders in 0_Scripts and simply run:-
 `sbatch run.sh` \
 For 'xty', further navigate to the 'neural-transducer' directory and run:-
-`sbatch [run_tagtransformer.sh]()`
+`sbatch run_tagtransformer.sh`
 
  ## My Approach
 ### Kabardian (kbd) and Swahili (swc) ([code](https://github.com/Aadit3003/subword-miniproject-2/blob/01bd97a177a78948b1d2869e06f717b089a90014/1_Scripts/kbd/prep.py))
